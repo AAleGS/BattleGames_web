@@ -1,11 +1,43 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+/* color palette */
+:root{
+  --navbar-bg-color: #eaeaea;
+  --banner-font-color: #001514;
+  --background-color-primary: #eaeaea;
+  --background-color-secondary: #1e2019;
+  --background-color-footer: black;
+  --h2-font-color: #e3b505;
+
+}
+
+body{
+  background-color: var(--background-color-primary);
+}
+.subtitle{
+  font-family: "Electrolize", serif;
+  color: var(--h2-font-color);
+  font-style: italic;
+  
+}
+
+.navbar{
+background-color: var(--navbar-bg-color);
+}
+.navbar-brand{
+  font-family: "Electrolize", serif;
+  color: var(--banner-font-color);
 }
 
 .navbar-nav {
@@ -18,13 +50,32 @@
 
 #sobrePagina{
     font-family: "Montserrat",serif;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 3vh;
+    font-weight: 400;
+}
+
+#juegos{
+  background-color: var(--background-color-secondary) ;
 }
 
 
 
-@media screen and (max-width: 355px) {
+footer{
+  height: 50vh;
+  background-color: var(--background-color-footer);
+}
+
+.footer img{
+  background-color: aliceblue;
+  padding: 4px;
+ border-radius: 50%;
+}
+
+.socialmedia{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
   .navbar-brand span {
     display: none;
   }
