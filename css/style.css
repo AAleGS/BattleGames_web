@@ -1,0 +1,204 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* color palette */
+:root {
+  --navbar-bg-color: #eaeaea;
+  --banner-font-color: #001514;
+  --background-color-primary: #eaeaea;
+  --background-color-secondary: #1e2019;
+  --background-color-footer: black;
+  --h2-font-color: #3b3621;
+}
+
+body {
+  background-color: var(--background-color-primary);
+}
+
+/* Header CSS */
+.navbar {
+  background-color: var(--navbar-bg-color);
+}
+.navbar-brand {
+  font-family: "Electrolize", serif;
+  color: var(--banner-font-color);
+}
+
+.navbar-nav {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+#MainBanner {
+  padding: 0;
+}
+
+/* Main CSS */
+
+.subtitle {
+  font-family: "Electrolize", serif;
+  color: var(--h2-font-color);
+  margin-left: 20px;
+}
+
+.aboutP_item {
+  width: 500px;
+  margin: 5px;
+}
+
+.aboutP_item img {
+  border-radius: 25px;
+}
+
+.aboutP_item p {
+  font-family: "Roboto Flex", sans-serif;
+  text-align: justify;
+  text-indent: 20px;
+  font-size: clamp(0.9rem, 1.5vw, 1.5vw);
+}
+
+.container_dark {
+  background-color: var(--background-color-secondary);
+}
+
+.image_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35vh);
+  gap: 1vw;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 35vh;
+  margin: 4vw 0 4vw 0;
+}
+
+.card-body {
+  background-color: #e3b505;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: center;
+}
+
+#ideaOriginal iframe {
+  width: auto;
+  border-radius: 25px;
+}
+
+#comprarLibro a img {
+  max-height: 315px;
+  border-radius: 25px;
+}
+
+.contacto_dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Contacto_Form {
+  justify-content: center;
+  padding: 4vw 4vw 4vw 4vw;
+  border-radius: 25px;
+  width: clamp(30vw, 100%, 60vw);
+}
+
+label {
+  color: #e3b505;
+  margin-top: 1vw;
+}
+
+.Contacto_Form button {
+  margin-top: 1vw;
+  align-self: center;
+}
+
+footer {
+  height: 40vh;
+  background-color: var(--background-color-footer);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer img {
+  background-color: #eaeaea;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.developed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 1px;
+}
+
+.socialMedia .bi {
+  font-size: 50px;
+  margin: 0 6px 0 6px;
+  color: #e3b505;
+}
+
+/* media queires */
+
+@media screen and (max-width: 400px) {
+  .navbar-brand span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container_light {
+    margin: 2vh 0 3vh 0;
+  }
+  .aboutP_item {
+    width: 300px;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container_light {
+    margin: 4vh 0 4vh 0;
+  }
+
+  .aboutP_item {
+    width: 400px;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container_light {
+    margin: 7vh 0 7vh 0;
+  }
+
+  .aboutP_item {
+    width: 500px;
+    margin: 5px;
+  }
+
+  section {
+    margin: 7vh 0 7vh 0;
+  }
+}
+
+* pagina de juegos */ .codigo-view p {
+  background-color: #f0f0f0;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}

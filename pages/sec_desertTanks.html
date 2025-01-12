@@ -4,63 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Desert Tank Battle</title>
+    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, JavaScript">
+    <meta name="description" content="Proyecto de FrontEnd con BootStrap">
+    <meta name="author" content="Antonio Gonzalez">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="../asset/img/page_icon.ico" type="image/x-icon">
+    <title>Computer BattleGames in JavaScript </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <div id="titulo">
-            <h1>Computer BattleGames</h1>
-            <H2>En JavaScript</H2>
-        </div>
-        <nav id="navegacion">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#sobrePagina">Sobre Pagina</a></li>
-                <li><a href="../index.html#juegos">Probar Juegos</a></li>
-                <li><a href="../index.html#ideaOriginal">Inspiración</a></li>
-                <li><a href="../index.html#comprarLibro">Comprar libro</a></li>
-                <li><a href="../index.html#contacto">Contacto</a></li>
-            </ul>
+    <header class="container-fluid">
+        <nav class="row navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-item-center justify-content-evenly" href="../index.html">
+                    <img src="../asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="40" height="40">
+                    <span class="navbar-brand-name mt-1 ms-2">BattleGames in JavaScript</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-item-center justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#sobrePagina">Sobre la Pagina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html#juegos">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#ideaOriginal">Inspiración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#comprarLibro">Comprar Libro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <div class="row banner-row">
+            <img id="MainBanner" src="../asset/img/Games_Banner.webp" alt="Main Banner Image">
+        </div>
     </header>
     <main>
-        <section class="extras">
-            <div class="box-extra" id="playjuego">
-                <h2 class="subtitulos">Desert Tank Battle</h2>
-                <p>pantalla donde ejecuta el juego</p>
+        <div class="container_game">
+            <div class="instruction">
+                <h2>Instruciones</h2>
+                <p>El último gran bastión de las fuerzas robóticas fuera de EE.UU. está oculto en las ruinas de un antiguo
+                    castillo en medio del desierto.
+                    ruinas de un castillo en medio del desierto. Una flota de tanques aerodeslizadores del desierto ha sido
+                    enviada
+                    para destruirlo y usted es el comandante. Tu tanque controla los cinco misiles
+                    restantes.
+                    Usted debe evaluar cuidadosamente la dirección y la elevación antes de lanzar cada uno.
+                    cada uno. Su ordenador le pedirá un ángulo de dirección entre -90° (extremo izquierdo)
+                    y +90° (extrema derecha) y un ángulo de elevación entre 0° (a lo largo del suelo) y
+                    90° (recto en el aire). La elevación determina la distancia que recorrerá el misil.
+                    misil. ¿Su puntería es lo suficientemente buena como para destruir la fortaleza del robot?.</p>
             </div>
-            <div class="box-extra" id="codigo-view">
-                <h2 class="subtitulos">Hazlo tu mismo</h2>
-                <p>Aqui va el código</p>
+            <div class="card"><img src="../asset/img/logo.webp" alt="Shootout Game" class="card-img-top"></a>
+                <div class="card-body">
+                    <h4 class="card-text">Juego</h4>
+                </div>
             </div>
-        </section>
-        <section id="juego_desc">
-            <h2 class="subtitulos">Instrucciones</h2>
-            <p>El último gran bastión de las fuerzas robóticas fuera de EE.UU. está oculto en las ruinas de un antiguo
-                castillo en medio del desierto.
-                ruinas de un castillo en medio del desierto. Una flota de tanques aerodeslizadores del desierto ha sido
-                enviada
-                para destruirlo y usted es el comandante. Tu tanque controla los cinco misiles
-                restantes.
-                Usted debe evaluar cuidadosamente la dirección y la elevación antes de lanzar cada uno.
-                cada uno. Su ordenador le pedirá un ángulo de dirección entre -90° (extremo izquierdo)
-                y +90° (extrema derecha) y un ángulo de elevación entre 0° (a lo largo del suelo) y
-                90° (recto en el aire). La elevación determina la distancia que recorrerá el misil.
-                misil. ¿Su puntería es lo suficientemente buena como para destruir la fortaleza del robot?.</p>
-        </section>
-    </main>
-    <footer>
-        <div class="containerfooter">
-            <p>Desarrollado por: <strong>AGS</strong></p>
-            <div class="socialmedia">
-                <a href="https://www.linkedin.com/"><img src="../asset/img/linkedin-50.png" alt="linkedin"></a>
-                <a href="https://www.instagram.com/"><img src="../asset/img/instagram-50.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/"><img src="../asset/img/facebook-50.png" alt="facebook"></a>
+            <div class="card"><img src="../asset/img/logo.webp" alt="Shootout Game" class="card-img-top"></a>
+                <div class="card-body">
+                    <h4 class="card-text">Codigo</h4>
+                </div>
             </div>
         </div>
+    </main>
+    <footer class="footer">
+        <div class="developed">
+            <img src="../asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="80" height="80">
+            <p>@ Developed by <strong>AGS</strong></p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+        </div>
     </footer>
+    <!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
