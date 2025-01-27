@@ -1,0 +1,87 @@
+@mixin subtitle($par1, $par2, $par3) {
+  font-family: $par1;
+  color: $par2;
+  margin-left: $par3;
+}
+
+@mixin aboutP_card($par1, $par2) {
+  width: $par1;
+  margin: $par2;
+}
+
+@mixin b_rad {
+  border-radius: 25px;
+}
+
+@mixin card-body($par1, $par2, $par3) {
+  background-color: $par1;
+  font-family: $par2;
+  text-align: $par3;
+}
+
+@mixin footer_template {
+  height: 40vh;
+  background-color: $background-color-footer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0% {
+  }
+  50% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin footer_img {
+  background-color: $background-color-footer_sec;
+  padding: 4px;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@mixin developer_template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 1px;
+}
+
+@mixin Media_icons {
+  font-size: 50px;
+  margin: 0 6px 0 6px;
+  color: $terciary-font-color;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  33% {
+    transform: rotateX(180deg) rotateY(0) rotateZ(0);
+  }
+  67% {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
+}
+
+@mixin section_paragraph {
+  background-color: $background-color-terciary;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}

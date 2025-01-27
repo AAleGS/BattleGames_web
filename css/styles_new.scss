@@ -1,0 +1,173 @@
+@import "colors";
+@import "fonts";
+@import "abstracts";
+
+/* RESET */
+.reset {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $background-color-primary;
+}
+
+/* HEADER */
+.navbar {
+  background-color: $navbar-bg-color;
+}
+
+.navbar-brand {
+  font-family: $primary-font;
+  color: $banner-font-color;
+}
+
+.navbar-nav {
+  font-family: $secondary-font;
+}
+
+#MainBanner {
+  padding: 0;
+}
+
+/* MAIN */
+.subtitle {
+  @include subtitle($primary-font, $subtitle-font-color, 20px);
+}
+
+.aboutP_item {
+  @include aboutP_card(500px, 5px);
+}
+
+.aboutP_img {
+  @include b_rad;
+}
+
+.aboutP_item p {
+  font-family: $secondary-font;
+  text-align: justify;
+  text-indent: 20px;
+  font-size: clamp(0.9rem, 1.5vw, 1.5vw);
+}
+
+.container_dark {
+  background-color: $background-color-secondary;
+}
+
+.image_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35vh);
+  gap: 1vw;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 35vh;
+  margin: 4vw 0 4vw 0;
+}
+.card:hover {
+  scale: 1.1;
+}
+
+.card-body {
+  @include card-body($card-body-color, $secondary-font, center);
+}
+
+.box-extra .subtitle {
+  @include subtitle($primary-font, $subtitle-font-color, 0);
+}
+
+#ideaOriginal iframe {
+  @include b_rad;
+  width: auto;
+}
+
+#comprarLibro a img {
+  @include b_rad;
+  max-height: 315px;
+}
+
+.contacto_dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contacto_Form {
+  justify-content: center;
+  padding: 4vw 4vw 4vw 4vw;
+  border-radius: 25px;
+  width: clamp(30vw, 100%, 60vw);
+}
+
+label {
+  color: $terciary-font-color;
+  margin-top: 1vw;
+}
+
+.Contacto_Form button {
+  margin-top: 1vw;
+  align-self: center;
+}
+
+.footer {
+  @include footer_template;
+}
+
+.footer img {
+  @include footer_img;
+}
+
+.developed {
+  @include developer_template;
+}
+
+.socialMedia .bi {
+  @include Media_icons;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 400px) {
+  .navbar-brand span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container_light {
+    margin: 2vh 0 3vh 0;
+  }
+  .aboutP_item {
+    @include aboutP_card(300px, 5px);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container_light {
+    margin: 4vh 0 4vh 0;
+  }
+
+  .aboutP_item {
+    @include aboutP_card(400px, 5px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container_light {
+    margin: 7vh 0 7vh 0;
+  }
+
+  .aboutP_item {
+    @include aboutP_card(500px, 5px);
+  }
+
+  section {
+    margin: 7vh 0 7vh 0;
+  }
+}
+
+/* SECTIONS */
+.codigo-view p {
+  @include section_paragraph;
+}
