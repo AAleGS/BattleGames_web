@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, JavaScript">
+    <meta name="keywords" content="HTML, CSS, SASS, BOOTSTRAP, JavaScript">
     <meta name="description" content="Proyecto de FrontEnd con BootStrap">
     <meta name="author" content="Antonio Gonzalez">
     <!-- Bootstrap -->
@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="./asset/img/page_icon.ico" type="image/x-icon">
     <title>Computer BattleGames in JavaScript </title>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/styles_new.css">
+    <link rel="stylesheet" href="./styles/css/styles_new.css">
 </head>
 
 <body>
@@ -42,10 +42,7 @@
                             <a class="nav-link" href="#juegos">Juegos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#ideaOriginal">Inspiración</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#comprarLibro">Comprar Libro</a>
+                            <a class="nav-link" href="#miscelaneos">Misceláneos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacto">Contacto</a>
@@ -117,7 +114,7 @@
             </div>
         </section>
 
-        <section class="container_light">
+        <section class="container_light" id="miscelaneos">
             <div class="container-fluid d-flex flex-wrap justify-content-around align-item-center">
                 <div class="box-extra" id="ideaOriginal">
                     <h2 class="subtitle">Inspiración</h2>
@@ -136,7 +133,8 @@
         </section>
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
-            <div class="container_dark contacto_dark">
+            <div class=" container_fluid container_dark contacto_dark d-flex flex-wrap align-item-center justify-content-evenly">
+                <div><img class="contact_img" src="./asset/img/contact_robot.webp" alt="Imagen Contacto"></div>
                 <form class="Contacto_Form">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>

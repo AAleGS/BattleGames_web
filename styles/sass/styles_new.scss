@@ -94,21 +94,28 @@ body {
   justify-content: center;
 }
 
+.contact_img {
+  @include aboutP_card(400px, 5px);
+  border-radius: 40%;
+  border: solid $card-body-color;
+}
+
 .Contacto_Form {
   justify-content: center;
-  padding: 4vw 4vw 4vw 4vw;
+  padding: 3vw 8vw 4vw 8vw;
   border-radius: 25px;
+  margin: 5px;
+  border: solid red;
   width: clamp(30vw, 100%, 60vw);
+  button {
+    margin-top: 1vw;
+    align-self: center;
+  }
 }
 
 label {
   color: $terciary-font-color;
   margin-top: 1vw;
-}
-
-.Contacto_Form button {
-  margin-top: 1vw;
-  align-self: center;
 }
 
 .footer {
@@ -166,6 +173,14 @@ label {
     margin: 7vh 0 7vh 0;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .contact_img{
+    display: none;
+  }
+}
+
+
 
 /* SECTIONS */
 .codigo-view p {

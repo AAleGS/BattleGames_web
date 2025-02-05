@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="../asset/img/page_icon.ico" type="image/x-icon">
     <title>Computer BattleGames in JavaScript </title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/styles_new.css">
+    <link rel="stylesheet" href="../styles/css/styles_new.css">
 </head>
 
 <body>
@@ -38,14 +38,22 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#sobrePagina">Sobre la Pagina</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html#juegos">Juegos</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/sec_vitalMessage.html">Vital Message</a></li>
+                                <li><a class="dropdown-item" href="/pages/sec_shootout.html">ShootOut</a></li>
+                                <li><a class="dropdown-item" href="/pages/sec_traitorCastle.html">Traitor's Castle</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/pages/sec_desertTanks.html">Desert Tank</a></li>
+                            </ul>
+
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#ideaOriginal">Inspiración</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html#comprarLibro">Comprar Libro</a>
+                            <a class="nav-link" href="../index.html#miscelaneos">Misceláneos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#contacto">Contacto</a>
@@ -56,11 +64,38 @@
         </nav>
         <div class="row banner-row">
             <img id="MainBanner" src="../asset/img/Games_Banner.webp" alt="Main Banner Image">
+            <!-- <h1>ROBOT MISSILE</h1> -->
         </div>
     </header>
     <main>
-        <div class="container_game">
-            <div class="instruction">
+        <h1 class="game_title">ROBOT MISSILE</h1>
+        <div class="container container_game">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            INSTRUCCIONES
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Corre el año 2582 y los habitantes de la Tierra están en plena batalla contra los
+                            robots.<br> Un misil
+                            Robot
+                            acaba de aterrizar y todo el mundo depende de ti
+                            de que encuentres el código secreto que desbloquea su mecanismo de desactivación. Si fallas,
+                            todo el
+                            Cuartel Comando de la Tierra <strong>volará por los aires</strong>. <br>
+                            Su ordenador sabe cuál es el código. <br>
+                            Debes escribir en su conjetura y te dirá si la letra del
+                            código es anterior o posterior en el alfabeto.<br>
+                            Tienes cuatro oportunidades para letra correcta antes de que estalle el misil
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="instruction">
                 <h2>Instruciones</h2>
                 <p>Corre el año 2582 y los habitantes de la Tierra están en plena batalla contra los robots. Un misil
                     Robot
@@ -70,7 +105,7 @@
                     Su ordenador sabe cuál es el código. Usted debe escribir en su conjetura y te dirá si la letra del
                     código es anterior o posterior en el alfabeto.
                     Tienes cuatro oportunidades para letra correcta antes de que estalle el misil.</p>
-            </div>
+            </div> -->
             <div class="card"><img src="../asset/img/logo.webp" alt="Shootout Game" class="card-img-top">
                 <div class="card-body">
                     <h4 class="card-text">Juego</h4>
@@ -82,6 +117,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     <footer class="footer">
         <div class="developed">
