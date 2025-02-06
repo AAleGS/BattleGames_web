@@ -74,18 +74,26 @@ body {
   @include card-body($card-body-color, $secondary-font, center);
 }
 
-.box-extra .subtitle {
-  @include subtitle($primary-font, $subtitle-font-color, 0);
-}
-
-#ideaOriginal iframe {
-  @include b_rad;
-  width: auto;
-}
-
-#comprarLibro a img {
-  @include b_rad;
-  max-height: 315px;
+.card_misc {
+  width: 32rem;
+  border: solid $background-color-secondary;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .card-body {
+    @include card-body($background-color-secondary, $secondary-font, center);
+    color: $terciary-font-color;
+  }
+  a {
+    justify-content: center;
+    
+    img {
+      height: 350px;
+      object-fit:fill;
+    }
+    
+  }
+  iframe{
+    height: 350px;
+  }
 }
 
 .contacto_dark {
@@ -95,18 +103,18 @@ body {
 }
 
 .contact_img {
-  @include aboutP_card(400px, 5px);
-  border-radius: 40%;
-  border: solid $card-body-color;
+  @include aboutP_card(400px, 6px);
+  border-radius: 50%;
+  box-shadow: 6px 6px 18px 4px #3b3621;
+  opacity: 0.5;
 }
 
 .Contacto_Form {
   justify-content: center;
-  padding: 3vw 8vw 4vw 8vw;
+  padding: 4vw 6vw 4vw 6vw;
   border-radius: 25px;
-  margin: 5px;
-  border: solid red;
-  width: clamp(30vw, 100%, 60vw);
+  margin: 0;
+  width: clamp(200px, 90%, 700px);
   button {
     margin-top: 1vw;
     align-self: center;
@@ -175,12 +183,10 @@ label {
 }
 
 @media screen and (max-width: 1000px) {
-  .contact_img{
+  .contact_img {
     display: none;
   }
 }
-
-
 
 /* SECTIONS */
 .codigo-view p {

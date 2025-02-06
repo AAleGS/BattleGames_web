@@ -20,7 +20,7 @@
 
 <body>
     <header class="container-fluid">
-        <nav class="row navbar navbar-expand-lg">
+        <nav class="row navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-item-center justify-content-evenly" href="index.html">
                     <img src="asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="40" height="40">
@@ -104,8 +104,10 @@
                             <h4 class="card-text">Desert Tank</h4>
                         </div>
                     </div>
-                    <div class="card"><a href="./pages/sec_traitorCastle.html"><img src="./asset/img/Castle.jpeg"
-                                alt="Traitor Castle Game" class="card-img-top"></a>
+                    <div class="card">
+                        <a href="./pages/sec_traitorCastle.html">
+                            <img src="./asset/img/Castle.jpeg" alt="Traitor Castle Game" class="card-img-top">
+                        </a>
                         <div class="card-body">
                             <h4 class="card-text">Traitor's Castle</h4>
                         </div>
@@ -115,25 +117,35 @@
         </section>
 
         <section class="container_light" id="miscelaneos">
+            <h2 class="subtitle">Misceláneos</h2>
             <div class="container-fluid d-flex flex-wrap justify-content-around align-item-center">
-                <div class="box-extra" id="ideaOriginal">
-                    <h2 class="subtitle">Inspiración</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3kdM9wyglnw?si=4cUAj492PZogQ4qo"
+
+                <div class="card card_misc">
+                    <div class="card-body">
+                        <h4 class="card-text">Idea Original</h4>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/3kdM9wyglnw?si=4cUAj492PZogQ4qo"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        class="card-img-bottom"></iframe>
                 </div>
-                <div class="box-extra" id="comprarLibro">
-                    <h2 class="subtitle">Comprar Libro</h2>
+
+                <div class="card card_misc">
+                    <div class="card-body">
+                        <h4 class="card-text">Comprar Libro</h4>
+                    </div>
                     <a href="https://a.co/d/iokDYIM">
-                        <img src="./asset/img/BookCover.jpg" alt="Computer BattleGames Book">
+                        <img src="./asset/img/BookCover.jpg" alt="Computer BattleGames Book" class="card-img-bottom">
                     </a>
                 </div>
+
             </div>
         </section>
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
-            <div class=" container_fluid container_dark contacto_dark d-flex flex-wrap align-item-center justify-content-evenly">
+            <div
+                class=" container_fluid container_dark contacto_dark d-flex flex-wrap align-item-center justify-content-center">
                 <div><img class="contact_img" src="./asset/img/contact_robot.webp" alt="Imagen Contacto"></div>
                 <form class="Contacto_Form">
                     <div class="form-group">

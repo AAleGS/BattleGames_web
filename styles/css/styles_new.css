@@ -97,20 +97,26 @@ body {
   text-align: center;
 }
 
-.box-extra .subtitle {
-  font-family: "Electrolize", serif;
-  color: #3b3621;
-  margin-left: 0;
+.card_misc {
+  width: 32rem;
+  border: solid #1e2019;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-#ideaOriginal iframe {
-  border-radius: 25px;
-  width: auto;
+.card_misc .card-body {
+  background-color: #1e2019;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: center;
+  color: #e3b505;
 }
-
-#comprarLibro a img {
-  border-radius: 25px;
-  max-height: 315px;
+.card_misc a {
+  justify-content: center;
+}
+.card_misc a img {
+  height: 350px;
+  object-fit: fill;
+}
+.card_misc iframe {
+  height: 350px;
 }
 
 .contacto_dark {
@@ -121,18 +127,18 @@ body {
 
 .contact_img {
   width: 400px;
-  margin: 5px;
-  border-radius: 40%;
-  border: solid #e3b505;
+  margin: 6px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 18px 4px #3b3621;
+  opacity: 0.5;
 }
 
 .Contacto_Form {
   justify-content: center;
-  padding: 3vw 8vw 4vw 8vw;
+  padding: 4vw 6vw 4vw 6vw;
   border-radius: 25px;
-  margin: 5px;
-  border: solid red;
-  width: clamp(30vw, 100%, 60vw);
+  margin: 0;
+  width: clamp(200px, 90%, 700px);
 }
 .Contacto_Form button {
   margin-top: 1vw;
