@@ -19,6 +19,7 @@
     transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
   }
 }
+/* SECTIONS */
 /* RESET */
 .reset {
   box-sizing: border-box;
@@ -106,7 +107,7 @@ body {
   background-color: #1e2019;
   font-family: "Roboto Flex", sans-serif;
   text-align: center;
-  color: #e3b505;
+  color: rgb(238, 215, 123);
 }
 .card_misc a {
   justify-content: center;
@@ -146,7 +147,7 @@ body {
 }
 
 label {
-  color: #e3b505;
+  color: rgb(238, 215, 123);
   margin-top: 1vw;
 }
 
@@ -181,7 +182,7 @@ label {
 .socialMedia .bi {
   font-size: 50px;
   margin: 0 6px 0 6px;
-  color: #e3b505;
+  color: #4d7c9a;
 }
 
 /* MEDIA QUERIES */
@@ -226,12 +227,34 @@ label {
   }
 }
 /* SECTIONS */
-.codigo-view p {
-  background-color: #f0f0f0;
-  font-family: monospace;
-  font-size: 12px;
-  padding: 10px;
-  border: 1px solid #ccc;
+.accordion-section {
+  --bs-accordion-btn-bg: #e3b505;
+  --bs-accordion-active-bg: rgb(238, 215, 123);
+  --bs-accordion-border-color: #e3b505;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.main-game {
+  padding: 0;
+}
+
+.section_banner {
+  margin: 4rem 0 2rem 0;
+  background-image: url("/asset/img/Games_Banner.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: end;
+  height: 8rem;
+}
+.section_banner h1 {
+  color: #eaeaea;
+}
+
+.container_game {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #1e2019;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles_new.css.map */

@@ -13,13 +13,14 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="../asset/img/page_icon.ico" type="image/x-icon">
-    <title>Computer BattleGames in JavaScript </title>
+    <title>Robot Missile Game</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/css/styles_new.css">
 </head>
 
 <body>
-    <header class="container-fluid">
+    
+    <header>
         <nav class="row navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-item-center justify-content-evenly" href="../index.html">
@@ -49,9 +50,7 @@
                                 </li>
                                 <li><a class="dropdown-item" href="/pages/sec_desertTanks.html">Desert Tank</a></li>
                             </ul>
-
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#miscelaneos">Misceláneos</a>
                         </li>
@@ -62,50 +61,41 @@
                 </div>
             </div>
         </nav>
-        <div class="row banner-row">
-            <img id="MainBanner" src="../asset/img/Games_Banner.webp" alt="Main Banner Image">
-            <!-- <h1>ROBOT MISSILE</h1> -->
-        </div>
+        
     </header>
-    <main>
-        <h1 class="game_title">ROBOT MISSILE</h1>
-        <div class="container container_game">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            INSTRUCCIONES
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Corre el año 2582 y los habitantes de la Tierra están en plena batalla contra los
-                            robots.<br> Un misil
-                            Robot
-                            acaba de aterrizar y todo el mundo depende de ti
-                            de que encuentres el código secreto que desbloquea su mecanismo de desactivación. Si fallas,
-                            todo el
-                            Cuartel Comando de la Tierra <strong>volará por los aires</strong>. <br>
-                            Su ordenador sabe cuál es el código. <br>
-                            Debes escribir en su conjetura y te dirá si la letra del
-                            código es anterior o posterior en el alfabeto.<br>
-                            Tienes cuatro oportunidades para letra correcta antes de que estalle el misil
-                        </div>
+    <main class="container-fluid main-game">
+
+        <div class="section_banner container-fluid">
+            <h1 class="game_title">ROBOT MISSILE</h1>
+        </div>
+
+        <div class="accordion accordion-section container">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        INSTRUCCIONES
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Corre el año 2582 y los habitantes de la Tierra están en plena batalla contra los
+                        robots.<br> Un misil
+                        Robot
+                        acaba de aterrizar y todo el mundo depende de ti
+                        de que encuentres el código secreto que desbloquea su mecanismo de desactivación. Si fallas,
+                        todo el
+                        Cuartel Comando de la Tierra <strong>volará por los aires</strong>. <br>
+                        Su ordenador sabe cuál es el código. <br>
+                        Debes escribir en su conjetura y te dirá si la letra del
+                        código es anterior o posterior en el alfabeto.<br>
+                        Tienes cuatro oportunidades para letra correcta antes de que estalle el misil
                     </div>
                 </div>
             </div>
-            <!-- <div class="instruction">
-                <h2>Instruciones</h2>
-                <p>Corre el año 2582 y los habitantes de la Tierra están en plena batalla contra los robots. Un misil
-                    Robot
-                    acaba de aterrizar y todo el mundo depende de ti
-                    de que encuentres el código secreto que desbloquea su mecanismo de desactivación. Si fallas, todo el
-                    Cuartel Comando de la Tierra volará por los aires.
-                    Su ordenador sabe cuál es el código. Usted debe escribir en su conjetura y te dirá si la letra del
-                    código es anterior o posterior en el alfabeto.
-                    Tienes cuatro oportunidades para letra correcta antes de que estalle el misil.</p>
-            </div> -->
+        </div>
+
+        <div class="container container_game d-flex flex-wrap align-item-center justify-content-evenly">
             <div class="card"><img src="../asset/img/logo.webp" alt="Shootout Game" class="card-img-top">
                 <div class="card-body">
                     <h4 class="card-text">Juego</h4>
@@ -119,6 +109,7 @@
         </div>
 
     </main>
+
     <footer class="footer">
         <div class="developed">
             <img src="../asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="80" height="80">

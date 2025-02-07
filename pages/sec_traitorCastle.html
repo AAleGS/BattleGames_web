@@ -13,14 +13,15 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="../asset/img/page_icon.ico" type="image/x-icon">
-    <title>Computer BattleGames in JavaScript </title>
+    <title>Traitor's Castle Game</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/css/styles_new.css">
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="row navbar navbar-expand-lg">
+    
+    <header>
+        <nav class="row navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-item-center justify-content-evenly" href="../index.html">
                     <img src="../asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="40" height="40">
@@ -38,6 +39,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#sobrePagina">Sobre la Pagina</a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
@@ -48,9 +50,10 @@
                                 </li>
                                 <li><a class="dropdown-item" href="/pages/sec_desertTanks.html">Desert Tank</a></li>
                             </ul>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html#miscelaneos">Misceláneos</a>
-                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#miscelaneos">Misceláneos</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#contacto">Contacto</a>
                         </li>
@@ -58,24 +61,34 @@
                 </div>
             </div>
         </nav>
-        <div class="row banner-row">
-            <img id="MainBanner" src="../asset/img/Games_Banner.webp" alt="Main Banner Image">
-        </div>
+        
     </header>
-    <main>
-        <div class="container_game">
-            <div class="instruction">
-                <h2>Instruciones</h2>
-                <p>El Rey está librando una batalla feroz y sangrienta contra su enemigo más mortífero - el Traidor
-                    Barón.
-                    Eres uno de los mejores arqueros del Rey y en este momento estás agazapado detrás de los arbustos
-                    fuera del Castillo del Barón, disparando a sus hombres cuando levantan la cabeza por encima de las
-                    almenas.
-                    Tu ordenador imprimirá una fila que contiene ocho puntos y una O.
-                    Las teclas numéricas 1 a 9 corresponden a la posición del 0 en la fila. Tiene poco tiempo para
-                    pulsar la tecla correcta, y golpear
-                    la O, antes de que desaparezca. ¿A cuántos de los hombres del Barón puedes acertar?.</p>
+    <main class="container-fluid main-game">
+
+        <div class="section_banner container-fluid">
+            <h1 class="game_title">TRAITOR'S CASTLE</h1>
+        </div>
+
+        <div class="accordion accordion-section container">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        INSTRUCCIONES
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El Rey está librando una batalla feroz y sangrienta contra su enemigo más mortífero <strong>El Barón Traidor.</strong> <br>
+                Eres uno de los mejores arqueros del Rey y en este momento estás agazapado detrás de los arbustos fuera del Castillo del Barón, disparando a sus hombres cuando levantan la cabeza por encima de las almenas. <br>
+                Tu ordenador imprimirá una fila que contiene ocho puntos y un 0.
+                Las teclas numéricas 1 a 9 corresponden a la posición del 0 en la fila. Tiene poco tiempo para pulsar la tecla correcta, y golpear 0, antes de que desaparezca.<br> <strong>¿A cuántos de los hombres del Barón puedes acertar?</strong>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="container container_game d-flex flex-wrap align-item-center justify-content-evenly">
             <div class="card"><img src="../asset/img/logo.webp" alt="Shootout Game" class="card-img-top">
                 <div class="card-body">
                     <h4 class="card-text">Juego</h4>
@@ -87,7 +100,9 @@
                 </div>
             </div>
         </div>
+
     </main>
+
     <footer class="footer">
         <div class="developed">
             <img src="../asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="80" height="80">

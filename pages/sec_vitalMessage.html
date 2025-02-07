@@ -13,14 +13,15 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="../asset/img/page_icon.ico" type="image/x-icon">
-    <title>Computer BattleGames in JavaScript </title>
+    <title>Vital Message Game</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/css/styles_new.css">
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="row navbar navbar-expand-lg">
+
+    <header>
+        <nav class="row navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-item-center justify-content-evenly" href="../index.html">
                     <img src="../asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="40" height="40">
@@ -38,6 +39,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#sobrePagina">Sobre la Pagina</a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
@@ -48,9 +50,10 @@
                                 </li>
                                 <li><a class="dropdown-item" href="/pages/sec_desertTanks.html">Desert Tank</a></li>
                             </ul>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html#miscelaneos">Misceláneos</a>
-                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#miscelaneos">Misceláneos</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#contacto">Contacto</a>
                         </li>
@@ -58,24 +61,39 @@
                 </div>
             </div>
         </nav>
-        <div class="row banner-row">
-            <img id="MainBanner" src="../asset/img/Games_Banner.webp" alt="Main Banner Image">
-        </div>
+
     </header>
-    <main>
-        <div class="container_game">
-            <div class="instruction">
-                <h2>Instruciones</h2>
-                <p>Eres un operador de comunicaciones láser.
-                    Tu trabajo consiste en interceptar los mensajes de los robots y transmitirlos al Cuartel General.
-                    Se espera un mensaje en código vital. Si lo transmites correctamente, el ataque de los robots se
-                    verá interrumpido.
-                    Este juego pone a prueba tu habilidad para recordar un grupo de letras que sólo ves durante muy poco
-                    tiempo.
-                    El ordenador le pedirá una dificultad de 4 a 10. Cuando haya tecleado su respuesta, aparecerán unas
-                    letras en la parte superior izquierda de la pantalla y desaparecerán rápidamente. Memorícelas y
-                    luego escríbalas en el ordenador y comprueba si has acertado.</p>
+    <main class="container-fluid main-game">
+
+        <div class="section_banner container-fluid">
+            <h1 class="game_title">VITAL MESSAGE</h1>
+        </div>
+
+        <div class="accordion accordion-section container">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        INSTRUCCIONES
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Eres un operador de comunicaciones láser y tu trabajo consiste en interceptar los mensajes de
+                        los robots y transmitirlos al Cuartel General. <br>
+                        Se espera un mensaje vital en código. Si lo transmites correctamente, el ataque de los robots se
+                        verá interrumpido.<br>
+                        Este juego pone a prueba tu habilidad para recordar un grupo de letras que sólo ves durante muy
+                        poco tiempo. <br>
+                        El ordenador le pedirá una dificultad de 4 a 10. Cuando haya tecleado su respuesta, aparecerán
+                        unas letras en la parte superior izquierda de la pantalla que desaparecerán rápidamente. <br>
+                        Memorícelas y luego escríbalas en el ordenador y comprueba si has acertado
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="container container_game d-flex flex-wrap align-item-center justify-content-evenly">
             <div class="card"><img src="../asset/img/logo.webp" alt="Shootout Game" class="card-img-top">
                 <div class="card-body">
                     <h4 class="card-text">Juego</h4>
@@ -87,7 +105,9 @@
                 </div>
             </div>
         </div>
+
     </main>
+
     <footer class="footer">
         <div class="developed">
             <img src="../asset/img/page_icon.ico" alt="Computer BattleGames Logo" width="80" height="80">

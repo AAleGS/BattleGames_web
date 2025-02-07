@@ -60,7 +60,7 @@
 @mixin Media_icons {
   font-size: 50px;
   margin: 0 6px 0 6px;
-  color: $terciary-font-color;
+  color: $media-font-color;
 }
 
 @keyframes spin {
@@ -78,10 +78,18 @@
   }
 }
 
+/* SECTIONS */
 @mixin section_paragraph {
   background-color: $background-color-terciary;
   font-family: monospace;
   font-size: 12px;
   padding: 10px;
   border: 1px solid #ccc;
+}
+
+@mixin section-accordion {
+  --bs-accordion-btn-bg: #{$card-body-color};
+  --bs-accordion-active-bg: #{$card-body-color2};
+  --bs-accordion-border-color: #{$card-body-color};
+  --bs-accordion-btn-focus-box-shadow: none;
 }
